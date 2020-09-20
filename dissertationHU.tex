@@ -1,0 +1,145 @@
+\documentclass[12]{hamptondissertation-s}
+\usepackage[utf8]{inputenc}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsmath,amssymb,amsthm,verbatim}
+\usepackage[pdftex]{graphicx}
+\usepackage[toc,page]{appendix}
+\usepackage{tikz}
+\usepackage{tabularx,ragged2e,booktabs,caption, subcaption,longtable}
+\usepackage{url,hyperref}
+%\usepackage{chronology}
+\usepackage{listings}
+\usetikzlibrary{arrows,shapes}
+\usetikzlibrary{timeline}
+\usetikzlibrary{decorations.pathmorphing}
+%\setlength{\textheight}{10in}
+%\setlength{\textwidth}{6.5in}
+%\setlength{\topmargin}{-.75in}
+%\setlength{\oddsidemargin}{-6.5mm}
+%\setlength{\evensidemargin}{-6.5mm}
+\providecommand{\keywords}[1]{\textbf{\textit{Index terms---}} #1}
+\newcolumntype{C}[1]{>{\Centering}m{#1}}
+\renewcommand\tabularxcolumn[1]{C{#1}}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{colortbl}
+\usepackage{bm}
+% for cross-referencing accross chapter files
+\usepackage{xr}
+\usepackage{multirow}
+\usepackage{afterpage}
+%\usepackage{natbib}
+\usepackage[printonlyused]{acronym}
+\usepackage{cite}
+
+\usepackage{caption}
+\usepackage{subcaption}
+ \usepackage{url}
+%\usepackage{graphicx}
+
+\definecolor{green}{HTML}{66FF66}
+\definecolor{myGreen}{HTML}{009900}
+
+\renewcommand{\bibname}{References}
+
+\numberwithin{equation}{section}
+
+\author{Dongwi Handiipondola Dongwi}
+
+\credentials{B.A., Westminster College; \\ Ph.D. Hampton University}
+
+\advisor{Michael Kohl, Ph.D.}
+
+\abstractpageadvisor{Dr. Michael Kohl}  %This is the name of your advisor as it
+%should
+                                                 % appear on the Abstract page.
+\date{August 2020}
+
+\degree{Doctor of Philosophy}
+
+\department{Department of Physics}
+
+\dean{Michelle Penn-Marshall, Ph.D.}
+
+\member{Jos\'{e} L. Goity, Ph.D.}
+\member{Michael Hasinoff, Ph.D.}
+\member{Alberto Accardi, Ph.D.}
+\member{Narbe Kalantarians, Ph.D.}
+
+\title{Search for light neutral bosons in the TREK/E36 experiment at J-PARC}
+
+\begin{document}
+
+%------------------------- Preliminary Pages -------------------------%
+
+%\coversheet
+
+
+\frontmatter
+
+\maketitle
+
+
+\cleardoublepage
+
+\makesignature
+
+\copyrightpage[2020]
+\title{Search for Light Neutral Bosons in the TREK/E36 Experiment at J-PARC}
+
+%\begin{abstract}
+\include{abstract}
+%\end{abstract}
+
+%\topskip0pt   
+%\vspace{\fill}
+%\centerline{Dedicated to my parents.}
+%\vspace{\fill} 
+
+\begin{dedication}
+\centerline{\emph{Dedicated to my parents.}}
+\end{dedication}
+
+\begin{Acknowledgements}
+ I would like to acknowledge...
+\end{Acknowledgements}
+
+\tableofcontents
+
+\listoftables
+
+\listoffigures
+
+
+
+%------------------------- Main Body -------------------------%
+
+\mainmatter
+
+% each of these call a different file of the same name... ie. introduction.tex,
+\include{introduction}           % theory*         %introduction\motivation*
+%\include{experiment}   
+%\include{g4verif}          
+%\include{analysis}
+%\include{results}
+
+\addcontentsline{toc}{chapter}{REFERENCES}
+
+\bibliographystyle{unsrt}
+% the next line is the file name of your bibtex database...
+\bibliography{bibliography}
+
+% Appendices
+%\appendix
+%\include{contributions}
+%\include{installation}
+
+\begin{VITA}
+% \include{vita}
+\end{VITA}
+
+
+\end{document}
+
